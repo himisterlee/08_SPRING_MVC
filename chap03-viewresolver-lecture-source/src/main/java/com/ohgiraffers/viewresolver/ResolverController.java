@@ -33,7 +33,9 @@ public class ResolverController {
 
         System.out.println("리다이렉트 호출됨");
 
-        // redirect 옆에 ":" 접두사를 붙이면 forward가 아닌 redirect를 한다.
+        // redirect: 접두사를 붙이면 forward가 아닌 redirect를 한다.
+        // 해석 : redirect 의 값을 / 로 지정한다.
+        // (maincontroller 에 / 값을 가지면 main 으로 return 한다는 내용이 있어 main 화면으로 다시 되돌아옴)
         return "redirect:/";
     }
 
